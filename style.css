@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap%27%29%3B');
+*
+{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+#menu
+{
+    background-color: black;
+    display: flex;
+}
+#menu ul
+{
+    max-width: 800px;
+    list-style: none;
+    padding: 0;
+}
+#menu ul li
+{
+    display: inline;
+}
+#menu ul li a
+{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background .4s;
+}
+#menu ul li a:hover
+{
+    background-color: blue;
+}
+body
+{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgb(6, 238, 149), rgb(6, 90, 158));
+}
+.caixa-pesquisa
+{
+    position: absolute;
+    
+    background: rgb(12, 117, 109);
+    height: 40px;
+    padding: 28px;
+    border-radius: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.pesquisa
+{
+    border: none;
+    background: none;
+    outline: none;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: .5s;
+    font-family: 'Open Sans';
+}
+::-webkit-input-placeholder
+{
+    color: rgb(45, 45, 105);
+}
+.botao-pesquisa
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgb(12, 117, 109);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.caixa-pesquisa:hover > .pesquisa
+{
+    width: 240px;
+    padding: 0 6px;
+}
+.caixa-pesquisa:hover > .botao-pesquisa
+{
+    background: white;
+}
